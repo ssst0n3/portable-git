@@ -8,7 +8,9 @@ tar czvf html.tar.gz /var/www/html
 ```
 
 ### 2. init git
-source init_git.sh
+```
+source init_git.env
+```
 
 ### 3. backup
 ```
