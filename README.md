@@ -40,3 +40,8 @@ tar czvf git-backup.tar.gz $HOME/.git
 ```
 git diff
 ```
+
+### 8. clean untracked files
+```
+git clean -f xxx
+```
