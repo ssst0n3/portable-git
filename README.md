@@ -2,7 +2,7 @@
 
 ## How-To
 
-### 1. backup
+### 1. first backup
 ```
 tar czvf html.tar.gz /var/www/html
 ```
@@ -12,7 +12,7 @@ tar czvf html.tar.gz /var/www/html
 source init_git.env
 ```
 
-### 3. backup
+### 3. git-based backup
 ```
 cd /var/www/html
 git init
@@ -36,7 +36,22 @@ git checkout xxx
 tar czvf git-backup.tar.gz $HOME/.git
 ```
 
-### 7. diff
+### 7. check modify
+```
+git status
+```
+
+### 8. clean tracked files
+```
+git stash
+```
+
+### 9. clean untracked files
+```
+git clean -f xxx
+```
+
+### 10. diff
 ```
 git diff
 ```
@@ -44,9 +59,4 @@ git diff
 if there's no less
 ```
 git --no-pager diff
-```
-
-### 8. clean untracked files
-```
-git clean -f xxx
 ```
