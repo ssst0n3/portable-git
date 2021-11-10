@@ -41,6 +41,11 @@ tar czvf git-backup.tar.gz $HOME/.git
 git diff
 ```
 
+if there's no less
+```
+git --no-pager diff
+```
+
 ### 8. clean untracked files
 ```
 git clean -f xxx
