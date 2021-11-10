@@ -9,6 +9,10 @@ tar czvf html.tar.gz /var/www/html
 
 ### 2. init git
 ```
+cp portable-git.tar.gz ~/
+cd ~/
+tar xzvf portable-git.tar.gz
+cd portable-git
 source init_git.env
 ```
 
