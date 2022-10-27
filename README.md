@@ -32,7 +32,7 @@ git commit -m "patch vul1: index.php backdoor"
 
 ### 5. restore
 ```
-git checkout xxx
+git checkout <COMMIT HASH>
 ```
 
 ### 6. backup git(what if the machine lost)
@@ -60,7 +60,7 @@ git clean -f xxx
 git diff
 ```
 
-if there's no less
+if there's no binary `less`(required by git diff)
 ```
 git --no-pager diff
 ```
