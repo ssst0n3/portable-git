@@ -64,3 +64,9 @@ if there's no binary `less`(required by git diff)
 ```
 git --no-pager diff
 ```
+
+### 11. show: what did commit change
+
+```
+git show $commitID
+```
